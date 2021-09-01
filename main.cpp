@@ -7,8 +7,10 @@ int main() {
     BitmapImage b;
     std::string imgName = "test.png";
     if (b.load(imgName))
+    {
         std::cout << "show image: " << imgName << std::endl;
-    b.save("new test.jpg");
+        b.save("new test.jpg");
+    }
     else
         std::cerr << "image:" << imgName << " not readable." << std::endl;
     return 0;
